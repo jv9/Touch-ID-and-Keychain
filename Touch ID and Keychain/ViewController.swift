@@ -62,7 +62,11 @@ class ViewController: UIViewController {
         //  Secret value to store
         //
         let valueData = "The Top Secret Message V1".data(using: .utf8)!;
-        
+		
+		//
+		//	Create the Access Controll object telling how the new value
+		//	should be stored.
+		//
         let sacObject =
 			SecAccessControlCreateWithFlags(kCFAllocatorDefault,
 								kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly,
